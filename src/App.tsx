@@ -113,7 +113,7 @@ function App() {
     }));
   };
 
-  const onChange = (e: any) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
 
     setState((s) => ({
@@ -150,7 +150,6 @@ function App() {
   return (
     <div className="App">
       <Wrapper>
-        TEST
         <ItemWrapper>
           <HeaderBox id="Country" onClick={onSelectedFilter}>
             Country
