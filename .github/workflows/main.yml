@@ -16,4 +16,4 @@ jobs:
         uses: mohammed-atif/firebase-publish-react@v1.0
         with:
           firebase-token: ${{ secrets.FIREBASE_TOKEN }}
-        - run: ls -la  
+      - run: ls -la  
