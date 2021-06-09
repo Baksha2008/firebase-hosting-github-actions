@@ -15,7 +15,7 @@ jobs:
       - name: create .env
         uses: SpicyPizza/create-envfile@v1
         with:
-          envkey_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          envkey_REACT_APP_SECRET_KEY: ${{ secrets.REACT_APP_SECRET_KEY }}
           file_name: .env
       - run: ls -la && cat .env && npm install && npm run build
       - uses: w9jds/firebase-action@master
