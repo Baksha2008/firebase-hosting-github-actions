@@ -18,7 +18,7 @@ jobs:
           envkey_REACT_APP_SECRET_KEY: ${{ secrets.REACT_APP_SECRET_KEY }}
           directory: src
           file_name: .env
-      - run: cd scr && ls -la
+      - run: cd src && ls -la
       - run: npm install && npm run build
       - uses: w9jds/firebase-action@master
         with:
