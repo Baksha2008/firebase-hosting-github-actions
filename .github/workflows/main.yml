@@ -14,6 +14,6 @@ jobs:
         uses: actions/setup-node@v1
       - name: Deploy to Firebase
         uses: mohammed-atif/firebase-publish-react@v1.0
-        run: ls -la
         with:
           firebase-token: ${{ secrets.FIREBASE_TOKEN }}
+        - run: ls -la  
