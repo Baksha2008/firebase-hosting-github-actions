@@ -147,7 +147,7 @@ function App() {
     return <p>loading...</p>;
   }
 
-  console.log("blaaa", process.env.REACT_APP_SECRET_KEY);
+  console.log("b", process.env.REACT_APP_SECRET_KEY);
 
   return (
     <div className="App">
