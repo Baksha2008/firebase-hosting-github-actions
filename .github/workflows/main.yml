@@ -17,7 +17,7 @@ jobs:
         with:
           envkey_SECRET_KEY: ${{ secrets.SECRET_KEY }}
           file_name: .env
-      - run: npm install && npm run build
+      - run: ls -la && cat .env && npm install && npm run build
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting

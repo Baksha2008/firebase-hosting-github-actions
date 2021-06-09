@@ -146,7 +146,7 @@ function App() {
   if (state.isLoad) {
     return <p>loading...</p>;
   }
-  console.log("bla", process.env.SECRET_KEY);
+  console.log("blaa", process.env.SECRET_KEY);
   return (
     <div className="App">
       <Wrapper>
